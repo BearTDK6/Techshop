@@ -1,0 +1,347 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+}
+
+body {
+  background-color: rgba(240, 248, 255, 0.788);
+  padding: 2rem 1.5rem;
+  min-height: 100vh;
+}
+
+.gio-hang-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header-cua-hang {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  padding: 1rem 2rem;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.khu-vuc-logo img {
+  width: 120px;
+}
+
+.link-quay-lai {
+  background: #f1f5f9;
+  padding: 0.6rem 1.2rem;
+  border-radius: 40px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #2563eb;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.link-quay-lai:hover {
+  background: #2563eb;
+  color: white;
+}
+
+.luoi-gio-hang {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 2rem;
+}
+
+/* Danh sách sản phẩm */
+.danh-sach-san-pham {
+  background: white;
+  border-radius: 28px;
+  overflow: hidden;
+}
+
+.san-pham-trong-gio {
+  display: flex;
+  gap: 1.2rem;
+  padding: 1.5rem;
+  border-bottom: 1px solid #edf2f7;
+}
+
+.anh-san-pham {
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  overflow: hidden;
+  flex-shrink: 0;
+  background: #f8fafc;
+}
+
+.anh-san-pham img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.chi-tiet-san-pham {
+  flex: 1;
+}
+
+.ten-san-pham {
+  font-weight: 800;
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+}
+
+.mau-sac {
+  font-size: 0.9rem;
+  color: #475569;
+}
+
+.gia-san-pham {
+  font-weight: 700;
+  color: #2563eb;
+  margin: 6px 0 4px;
+  font-size: 1rem;
+}
+
+.dieu-khien-so-luong {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.nut-giam,
+.nut-tang {
+  background: #f1f5f9;
+  border: none;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #334155;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.nut-xoa {
+  background: none;
+  border: none;
+  color: #ef4444;
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 6px 10px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.so-luong-hien-tai {
+  font-weight: 700;
+  min-width: 28px;
+  text-align: center;
+}
+
+.tong-tung-dong {
+  font-weight: 700;
+  color: #0f172a;
+  margin-left: 6px;
+}
+
+.chi-tiet-san-pham p {
+  margin-top: 8px;
+  font-size: 0.9rem;
+}
+
+/* Tóm tắt đơn hàng */
+.tom-tat-don-hang {
+  background: white;
+  border-radius: 28px;
+  padding: 1.8rem;
+  position: sticky;
+  top: 1rem;
+  height: fit-content;
+}
+
+.tieu-de-tom-tat {
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  border-left: 5px solid #3b82f6;
+  padding-left: 1rem;
+}
+
+.hang-tom-tat {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.hang-tong-cong {
+  font-weight: 800;
+  font-size: 1.3rem;
+}
+
+.hang-tong-cong span:last-child {
+  color: #2563eb;
+}
+
+.phan-cach {
+  height: 1px;
+  background: #e2e8f0;
+  margin: 1rem 0;
+}
+
+.nut-thanh-toan {
+  width: 100%;
+  background: white;
+  color: #2563eb;
+  padding: 1rem;
+  border-radius: 60px;
+  font-weight: 700;
+  margin: 1rem 0;
+  cursor: pointer;
+  border: 2px solid #e2e8f0;
+}
+.nut-thanh-toan:hover {
+  background: #2563eb;
+  color: white;
+}
+
+.muc-khuyen-mai {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.nhom-nhap-ma {
+  display: flex;
+  gap: 10px;
+}
+
+.o-nhap-ma {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #e2e8f0;
+  border-radius: 60px;
+  background: white;
+}
+
+.nut-ap-dung {
+  background: white;
+  padding: 0 24px;
+  color: #2563eb;
+  border-radius: 60px;
+  font-weight: 500;
+  cursor: pointer;
+  border: 2px solid #e2e8f0;
+}
+.nut-ap-dung:hover {
+  background: #2563eb;
+  color: white;
+}
+
+.thong-bao-ma {
+  font-size: 0.75rem;
+  margin-top: 8px;
+  color: #475569;
+}
+
+.muc-goi-y {
+  margin-top: 2rem;
+}
+
+.tieu-de-goi-y {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #1e293b;
+}
+
+.luoi-goi-y {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.san-pham-goi-y {
+  background: white;
+  border-radius: 16px;
+  padding: 1rem;
+  text-align: center;
+  transition: 0.2s;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.san-pham-goi-y:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.san-pham-goi-y img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 12px;
+  margin-bottom: 8px;
+}
+
+.san-pham-goi-y h4 {
+  font-size: 0.9rem;
+  margin: 8px 0 4px;
+}
+
+.san-pham-goi-y p {
+  font-weight: 700;
+  color: #2563eb;
+  font-size: 0.85rem;
+}
+
+.san-pham-goi-y button {
+  margin-top: 0.5rem;
+  background: white;
+  border: none;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+.btn-them {
+  background: white;
+  color: #2563eb;
+  border: 2px solid #e2e8f0;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.btn-them:hover {
+  background: #2563eb;
+  color: white;
+}
+
+@media (max-width: 780px) {
+  .luoi-gio-hang {
+    grid-template-columns: 1fr;
+  }
+  .tom-tat-don-hang {
+    position: static;
+  }
+  .san-pham-trong-gio {
+    flex-direction: column;
+  }
+  .anh-san-pham {
+    width: 100%;
+    max-width: 140px;
+  }
+  .dieu-khien-so-luong {
+    justify-content: flex-start;
+  }
+}
