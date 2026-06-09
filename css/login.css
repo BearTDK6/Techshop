@@ -1,4 +1,3 @@
-
 body {
     background: #f5f7fb;
     font-family:'Poppins',sans-serif;
@@ -102,7 +101,7 @@ p {
 .quen {
     text-decoration: none;
     color: orangered;
-    margin: 0 0 20px 78%;
+    margin: 0 0 20px 70%;
 }
 .dangnhap {
     width: 30%;
@@ -140,4 +139,31 @@ p {
     border-radius: 5px;
     cursor: pointer;
     width: 100%;
+}
+@media (max-width: 768px) {
+    #navbar,
+    .container {
+        flex-direction: column;
+    }
+
+    .menu {
+        margin: 20px 0;
+        gap: 10px;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .anh,
+    .login,
+    .chung,
+    .dangnhap {
+        width: 100%;
+    }
+
+    .quen {
+        margin: 10px 0;
+        text-align: right;
+    }
 }
